@@ -21,6 +21,10 @@
   header{padding:28px 0;border-bottom:1px solid var(--line)}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;letter-spacing:-.01em}
   .dot{width:26px;height:26px;border-radius:8px;background:var(--accent)}
+  .navbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .nav{display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+  .nav a{color:var(--muted);text-decoration:none}
+  .nav a:hover{color:var(--ink)}
   h1{font-size:clamp(32px,5vw,52px);line-height:1.08;letter-spacing:-.03em;margin:56px 0 18px;max-width:18ch}
   .lead{font-size:19px;color:var(--muted);max-width:60ch;margin:0 0 32px}
   .cta{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;
@@ -53,7 +57,16 @@
 <body>
 
 <header>
-  <div class="wrap brand"><span class="dot"></span> Sellora</div>
+  <div class="wrap navbar">
+    <div class="brand"><span class="dot"></span> Sellora</div>
+    <nav class="nav">
+      <a href="#pricing">Pricing</a>
+      <a href="#terms">Terms</a>
+      <a href="#refund">Refunds</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <div class="wrap">
@@ -102,7 +115,7 @@
       <div class="plan hi"><div class="tag">Best value</div><div class="note">Pro pack</div><div class="price">$74.99</div><div class="note">50 generations · $1.50 each · credits never expire</div></div>
     </div>
     <p style="margin-top:20px;color:var(--muted);font-size:15px">
-      One generation produces a sheet of 4 images. Payments are processed by <strong>Stripe</strong> on a secure
+      One generation produces a sheet of 4 images. Payments are processed by our payment partner on a secure
       checkout page — the app never sees or stores your card details. Credits are digital goods delivered
       instantly to your account after payment.
     </p>
@@ -129,6 +142,10 @@
   <div class="wrap">
     <h2>Terms of Service</h2>
     <div class="legal">
+      <p>These Terms of Service govern your use of Sellora, an iOS application and service operated by
+      Sergey Melikhov as a sole proprietor (individual seller) under the brand "Sellora". By purchasing
+      credits or using the app you agree to these terms. Contact:
+      <a href="mailto:erastfandorin2004@gmail.com">erastfandorin2004@gmail.com</a>.</p>
       <h3>Service</h3>
       <p>Sellora is an iOS application that generates product images and listing copy using AI models.
       Results are generated content: minor artifacts are possible, and you should review images before
@@ -146,6 +163,7 @@
       <h3>Changes</h3>
       <p>We may update features and prices; changes never reduce credits you have already purchased.
       These terms are governed by the law of the seller's country of residence.</p>
+      <p style="font-size:13px">Last updated: October 12, 2026.</p>
     </div>
   </div>
 </section>
@@ -157,7 +175,7 @@
       <p>We collect the minimum needed to run the service: your account email address, your generation
       balance and purchase history, and the photos and prompts you submit for generation.</p>
       <p>Uploaded photos and prompts are sent to third-party AI providers solely to produce your results
-      and are not used to train models by us. Payments are processed by Stripe; we never receive or store
+      and are not used to train models by us. Payments are processed by our payment partner; we never receive or store
       your card details. We do not sell personal data and do not use it for advertising.</p>
       <p>To delete your account and associated data, email
       <a href="mailto:erastfandorin2004@gmail.com">erastfandorin2004@gmail.com</a> from your account email.</p>
